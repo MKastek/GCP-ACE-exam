@@ -1,1 +1,0 @@
-# GCP-ACE-exam

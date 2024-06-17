@@ -18,3 +18,17 @@ This feature ensures that the nodes in your cluster are always up-to-date with t
 
 ### DaemonSet 
 A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected.  
+
+### Cloud Spanner 
+- Cloud Spanner is a fully managed, scalable, relational database service with global distribution and horizontal scaling capabilities.
+- It's designed to handle large volumes of transactions and to scale horizontally across regions without significant downtime.
+- Unlike some NoSQL databases that offer eventual consistency, Cloud Spanner provides strong consistency across global reads and writes, which is essential for relational data integrity.
+- It requires minimal management from the user's end, handling most of the scaling aspects automatically
+
+### Preemptible VM instances   
+Preemptible VM instances on Google Compute Engine are short-lived compute instances that can be used at a much lower cost than regular instances. They are suitable for batch jobs and workloads that can tolerate interruptions because they may be shut down by Google at any time if their resources are needed elsewhere. However, since your jobs are running nightly and only take about 2 hours to complete, preemptible VMs are ideal as they are significantly cheaper and the likelihood of interruption is acceptable for batch jobs.
+
+### Cloud Storage Object Lifecycle Management
+- `Cloud Storage Object Lifecycle Management` allows you to define a set of rules that manage the lifecycle of your objects. The Age condition specifies the number of days since the object's creation.  
+- The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  
+- The Delete action specifies when the object should be deleted.  

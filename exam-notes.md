@@ -31,4 +31,7 @@ Preemptible VM instances on Google Compute Engine are short-lived compute instan
 ### Cloud Storage Object Lifecycle Management
 - `Cloud Storage Object Lifecycle Management` allows you to define a set of rules that manage the lifecycle of your objects. The Age condition specifies the number of days since the object's creation.  
 - The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  
-- The Delete action specifies when the object should be deleted.  
+- The Delete action specifies when the object should be deleted.
+
+### Coldline Storage
+Coldline Storage is a storage class in Google Cloud Storage designed for data that you access less than once a quarter. It is priced lower than standard storage classes, making it cost-effective for long-term storage of data that is not accessed frequently.  

@@ -35,3 +35,6 @@ Preemptible VM instances on Google Compute Engine are short-lived compute instan
 
 ### Coldline Storage
 Coldline Storage is a storage class in Google Cloud Storage designed for data that you access less than once a quarter. It is priced lower than standard storage classes, making it cost-effective for long-term storage of data that is not accessed frequently.  
+
+### Cloud Storage
+Cloud Storage is designed to store large amounts of unstructured data in a variety of file formats, which makes it an ideal solution for storing data that will be used in ETL transformations.

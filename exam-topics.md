@@ -1,6 +1,6 @@
 ## Table of Contents
 * [Resources Used for Preparation](#resources-used-for-preparation)
-* [Main exam topics to know ](#most-important-topics-to-know)
+* [Main exam topics to know ](#main-exam-topics-to-know)
   * [Kubernetes](#kubernetes)
   * [Compute Engine](#compute-engine)
   * [App Engine](#app-engine)

@@ -88,3 +88,9 @@ Cloud Dataproc is a managed Spark/Hadoop service that can be used to migrate Had
 
 ### Sole tenant node in Compute Engine  
 On a sole tenant node in Compute Engine, only VMs from the same project will run on that node.  
+
+### Cloud Identity  
+Cloud Identity provides domain verification records, which are added to DNS settings for the domain.  
+
+### Shielded VM  
+Shielded VMs are hardened virtual machines that use Secure Boot, virtual trusted platform module enabled Measured Boot, and integrity monitoring.  

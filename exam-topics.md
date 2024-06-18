@@ -1,6 +1,6 @@
 ## Table of Contents
 * [Resources Used for Preparation](#resources-used-for-preparation)
-* [Most Import Topics to Know](#most-important-topics-to-know)
+* [Main exam topics to know ](#most-important-topics-to-know)
   * [Kubernetes](#kubernetes)
   * [Compute Engine](#compute-engine)
   * [App Engine](#app-engine)
@@ -16,12 +16,7 @@
 ## Resources Used for Preparation
 
 
----
-
-## Most Important Topics to Know
-
-*Note: I grabbed this list from [Tutorials Dojo](https://tutorialsdojo.com/gcp-associate-cloud-engineer-exam-study-guide/). There’s more information about the exam available on the linked page.*
-
+## Main exam topics to know 
 ### Kubernetes
 
 - **Features**

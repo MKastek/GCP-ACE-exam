@@ -33,8 +33,37 @@ Preemptible VM instances on Google Compute Engine are short-lived compute instan
 - The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  
 - The Delete action specifies when the object should be deleted.
 
+### Nealine Storage 
+Nearline Storage is a class of Cloud Storage designed for objects that will be accessed at most once every 30 days.  
+
 ### Coldline Storage
 Coldline Storage is a storage class in Google Cloud Storage designed for data that you access less than once a quarter. It is priced lower than standard storage classes, making it cost-effective for long-term storage of data that is not accessed frequently.  
 
 ### Cloud Storage
 Cloud Storage is designed to store large amounts of unstructured data in a variety of file formats, which makes it an ideal solution for storing data that will be used in ETL transformations.
+
+### Shared VPC
+Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
+
+### Cloud Audit Logs
+Google Cloud services write audit logs that record administrative activities and accesses within your Google Cloud resources. Audit logs help you answer "who did what, where, and when?"
+Cloud Audit Logs maintain three audit logs:  
+- `Admin Activity logs`,  
+- `Data Access logs`,  
+- `System Event logs`.  
+
+### Target pools in Cloud Load Balancing
+A target pool is a group of backend instances that receive incoming traffic from external passthrough Network Load Balancers. All backend instances of a target pool must reside in the same Google Cloud region. Target pools use HTTP health checks.
+
+
+### BigQuery
+BigQuery is a managed, petabyte scale data warehouse, which uses SQL.  
+
+### gcloud command to describe project
+`gcloud projects describe <PROJECT_ID>`
+
+### GKE default logs  
+Kubernetes Engine collects log data written to standard output `STDOUT` and standard error `STDERR`.
+
+### Clone persistent disk
+The source and cloned disk must be in the _same zone_ and _region_ and must be of the _same type_. The size of the clone must be at least the size of the source disk but does not need to be the same. 

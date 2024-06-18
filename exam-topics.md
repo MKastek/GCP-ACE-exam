@@ -1,6 +1,3 @@
-# Topics
-> Below are the most important topics to learn about in preparation for the exam. All of these topics have questions on the exam in one form or another
-
 ## Table of Contents
 * [Resources Used for Preparation](#resources-used-for-preparation)
 * [Most Import Topics to Know](#most-important-topics-to-know)
@@ -18,9 +15,6 @@
 
 ## Resources Used for Preparation
 
-- [Google Cloud - Cloud Engineer Learning Path](https://cloud.google.com/training/cloud-infrastructure/#cloud-engineer-learning-path)
-- [Udemy Practice Tests](https://www.udemy.com/course/google-certified-associate-cloud-engineer-practice-exams-gcp/)
-- [Medium Article](https://medium.com/google-developer-experts/yes-you-can-pass-the-google-cloud-associate-engineer-exam-e4468a7bcf7d)
 
 ---
 

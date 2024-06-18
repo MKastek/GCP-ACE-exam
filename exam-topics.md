@@ -86,7 +86,7 @@
     - Compute Engine might stop preemptible instances at any time due to system events.
     - This is perfect for fault-tolerant applications that can withstand possible instance preemption.
 - Sole-tenant Nodes
-    - A physical Compute Engine server dedicated exclusively for your use.
+    - A physical Compute Engine server dedicated exclusively for your use, these nodes are not shared with other users.
 
 ---
 

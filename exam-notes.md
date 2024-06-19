@@ -36,7 +36,7 @@ Preemptible VM instances on Google Compute Engine are short-lived compute instan
 Change storage class:  
 `gsutil rewrite -s Coldline gs://PATH_TO_OBJECT`  
 
-Creation and content type of objects:
+Creation and content type of objects:  
 `gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
 
 ### Nealine Storage 

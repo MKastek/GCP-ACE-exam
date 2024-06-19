@@ -50,7 +50,9 @@ Google Cloud services write audit logs that record administrative activities and
 Cloud Audit Logs maintain three audit logs:  
 - `Admin Activity logs`,  
 - `Data Access logs`,  
-- `System Event logs`.  
+- `System Event logs`.
+
+Data Access Audit logs generate large amounts of data and are disabled by default for most services; it is enabled by default for BigQuery. The other audit logs are not likely to generate the same volume of data as the Data Access Audit logs.    
 
 ### Target pools in Cloud Load Balancing
 A target pool is a group of backend instances that receive incoming traffic from external passthrough Network Load Balancers. All backend instances of a target pool must reside in the same Google Cloud region. Target pools use HTTP health checks.
@@ -92,5 +94,34 @@ On a sole tenant node in Compute Engine, only VMs from the same project will run
 ### Cloud Identity  
 Cloud Identity provides domain verification records, which are added to DNS settings for the domain.  
 
-### Shielded VM  
+### Shielded VM in Compute Engine  
 Shielded VMs are hardened virtual machines that use Secure Boot, virtual trusted platform module enabled Measured Boot, and integrity monitoring.  
+
+### Image families in Compute Engine    
+Image families are used to group related images together so you can roll forward or back between specific images versions. Image families always point to the latest version of an image that is not deprecated.  
+
+### Instances template in Compute Engine  
+Instance templates specify the configuration of virtual machines and managed instance groups.
+
+### Managed instance groups in Compute Engine  
+Managed instance groups are used to create sets of identically configured VMs that can autoscale an can be configure for regional deployment, they are resilient to a failure in a single zone.
+
+### Guest attributes in Compute Engine     
+When guest attributes are enabled, Compute Engine will store your generated host keys as guest attributes. SSH host keys on your VMs improve security.  
+
+### Cloud Run  
+#### Environment variables for service  
+When Cloud Run starts a container, it creates environment variables:  
+- PORT  
+- K_SERVICE  
+- K_REVISION  
+- K_CONFIGURATION  
+
+K_Configuration specifies the configuration that created the container.
+| Name|	Description |	Example |
+| --- | ----------- | ---- |
+| PORT|	The port your HTTP server should listen on. |	8080 |
+| K_SERVICE |	The name of the Cloud Run service being run. |	hello-world |
+| K_REVISION |	The name of the Cloud Run revision being run. |	hello-world.1 |
+ K_CONFIGURATION |	The name of the Cloud Run configuration that created the revision. |	hello-world |
+

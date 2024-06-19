@@ -128,6 +128,12 @@ Managed instance groups are used to create sets of identically configured VMs th
 When guest attributes are enabled, Compute Engine will store your generated host keys as guest attributes. SSH host keys on your VMs improve security.  
 
 ### Cloud Run  
+Cloud Run is a managed compute platform that lets you run `containers` directly on top of Google's scalable infrastructure.
+You can deploy code written in any programming language on Cloud Run if you can build a container image from it. In fact, building container images is optional.  
+
+On Cloud Run, your code can either run continuously as a `service` or as a `job`. Both services and jobs run in the same environment and can use the same integrations with other services on Google Cloud.  
+
+
 #### Environment variables for service  
 When Cloud Run starts a container, it creates environment variables:  
 - PORT  
@@ -141,5 +147,17 @@ K_Configuration specifies the configuration that created the container.
 | PORT|	The port your HTTP server should listen on. |	8080 |
 | K_SERVICE |	The name of the Cloud Run service being run. |	hello-world |
 | K_REVISION |	The name of the Cloud Run revision being run. |	hello-world.1 |
- K_CONFIGURATION |	The name of the Cloud Run configuration that created the revision. |	hello-world |
+ K_CONFIGURATION |	The name of the Cloud Run configuration that created the revision. |	hello-world |  
 
+
+ ### Cloud Foundation Toolkit
+ #### Best-practice templates  
+ The Cloud Foundation Toolkit provides a series of reference templates for Deployment Manager and Terraform which reflect Google Cloud best practices. These templates can be used off-the-shelf to quickly build a repeatable enterprise-ready foundation in Google Cloud. This frees you to focus on deploying your applications on this baseline secure environment. And with infrastructure as code (IaC), you can easily update the foundation as your needs change.  
+
+ ### Transfer Appliance  
+ Transfer Appliance is a high-capacity storage device that enables you to transfer and securely ship your data to a Google upload facility, where we upload your data to Cloud Storage.  
+
+### Allocation quotas  
+Allocation quotas, also known as resource quotas, define the number of resources that your project has access to. Compute Engine enforces allocation quotas on resource usage for various reasons. For example, quotas help to protect the community of Google Cloud users by preventing unforeseen spikes in usage.  
+
+Allocation quotas are the maximum number of resources you can create of that resource type, if those resources are available. 

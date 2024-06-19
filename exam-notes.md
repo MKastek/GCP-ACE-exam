@@ -33,6 +33,12 @@ Preemptible VM instances on Google Compute Engine are short-lived compute instan
 - The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  
 - The Delete action specifies when the object should be deleted.
 
+Change storage class:  
+`gsutil rewrite -s Coldline gs://PATH_TO_OBJECT`  
+
+Creation and content type of objects:
+`gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
+
 ### Nealine Storage 
 Nearline Storage is a class of Cloud Storage designed for objects that will be accessed at most once every 30 days.  
 
@@ -52,7 +58,7 @@ Cloud Audit Logs maintain three audit logs:
 - `Data Access logs`,  
 - `System Event logs`.
 
-Data Access Audit logs generate large amounts of data and are disabled by default for most services; it is enabled by default for BigQuery. The other audit logs are not likely to generate the same volume of data as the Data Access Audit logs.    
+`Data Access Audit logs` generate large amounts of data and are disabled by default for most services; it is enabled by default for BigQuery. The other audit logs are not likely to generate the same volume of data as the Data Access Audit logs.    
 
 ### Target pools in Cloud Load Balancing
 A target pool is a group of backend instances that receive incoming traffic from external passthrough Network Load Balancers. All backend instances of a target pool must reside in the same Google Cloud region. Target pools use HTTP health checks.
@@ -84,6 +90,18 @@ The source and cloned disk must be in the _same zone_ and _region_ and must be o
 
 ### App Engine  
 App Engine is designed for applications written in supported languages, that need to run at low cost, and need to scale in response to rapid increases in load. App Engine is a managed service and as such minimizes operational overhead.
+
+#### cron.yaml 
+Cron.yaml files contain specifications for running scheduled jobs in App Engine.
+
+#### app.yaml
+App.yaml has overall application specifications.  
+
+
+### Datastore
+#### index.yaml
+Index.yaml files contain indexes for complex queries that reference more than one attribute. Datastore automatically creates indexes for single attributes. All queries must have a supporting index.  
+
 
 ### Cloud Dataproc  
 Cloud Dataproc is a managed Spark/Hadoop service that can be used to migrate Hadoop clusters GCP.  

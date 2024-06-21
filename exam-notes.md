@@ -161,3 +161,10 @@ K_Configuration specifies the configuration that created the container.
 Allocation quotas, also known as resource quotas, define the number of resources that your project has access to. Compute Engine enforces allocation quotas on resource usage for various reasons. For example, quotas help to protect the community of Google Cloud users by preventing unforeseen spikes in usage.  
 
 Allocation quotas are the maximum number of resources you can create of that resource type, if those resources are available. 
+
+### Billing accounts in Google Cloud
+-  Project and its resources can only be tied to one billing account.
+-  Billing account can handle billing for more than one project.
+
+### Project name
+Project name is set by the user at creation. It does not have to be unique. It can be changed after creation time.  

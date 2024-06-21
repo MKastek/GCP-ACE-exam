@@ -124,6 +124,9 @@ Instance templates specify the configuration of virtual machines and managed ins
 ### Managed instance groups in Compute Engine  
 Managed instance groups are used to create sets of identically configured VMs that can autoscale an can be configure for regional deployment, they are resilient to a failure in a single zone.
 
+### Control in Compute Engine  
+Compute Engine gives full control over operating system choice and configuration.  
+
 ### Guest attributes in Compute Engine     
 When guest attributes are enabled, Compute Engine will store your generated host keys as guest attributes. SSH host keys on your VMs improve security.  
 

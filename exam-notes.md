@@ -183,3 +183,9 @@ Network Endopint Group (NEG) is a configuration object that specifies a group of
 
 ### Use of service accounts in GKE  
 When configuring access for GKE, you set up dedicated service accounts for each pod. You then use workload identity to map them to dedicated Kubernetes service accounts.
+
+### Apigee API platform  
+The Apigee API platform provides policy-based rate-limiting and routing services to help accommodate spikes in traffic. It also providdes OAuth 2.0 and SAML authentication.  
+
+### Cloud Firestore  
+Cloud Firestore is a mobile database service that can synchronize data between mobile devices and centralized storage. 

@@ -122,7 +122,10 @@ Image families are used to group related images together so you can roll forward
 Instance templates specify the configuration of virtual machines and managed instance groups.
 
 ### Managed instance groups in Compute Engine  
-Managed instance groups are used to create sets of identically configured VMs that can autoscale an can be configure for regional deployment, they are resilient to a failure in a single zone.
+Managed instance groups are used to create sets of identically configured VMs that can autoscale an can be configure for regional deployment, they are resilient to a failure in a single zone.  
+When configuring a managed instance group you should:  
+- define health checks,
+- provide number of instances.  
 
 ### Control in Compute Engine  
 Compute Engine gives full control over operating system choice and configuration.  
@@ -171,3 +174,12 @@ Allocation quotas are the maximum number of resources you can create of that res
 
 ### Project name
 Project name is set by the user at creation. It does not have to be unique. It can be changed after creation time.  
+
+### Network endpoint groups  
+Network Endopint Group (NEG) is a configuration object that specifies a group of backend endpoints or services. Internal http(s) load balancer can only use NEGs.  
+
+### Best practice for permissions  
+- Minimize the number of individual resources you have to set permissions for.
+
+### Use of service accounts in GKE  
+When configuring access for GKE, you set up dedicated service accounts for each pod. You then use workload identity to map them to dedicated Kubernetes service accounts.

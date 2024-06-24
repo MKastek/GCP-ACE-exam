@@ -97,6 +97,9 @@ Cron.yaml files contain specifications for running scheduled jobs in App Engine.
 #### app.yaml
 App.yaml has overall application specifications.  
 
+#### App Engine Standard  
+App Engine Standard i a platform as a service (PaaS), you do not have to manage underlying infrastructure. It provides a secure sandbox environment for deploying new features quickly.  
+
 
 ### Datastore
 #### index.yaml
@@ -188,4 +191,10 @@ When configuring access for GKE, you set up dedicated service accounts for each 
 The Apigee API platform provides policy-based rate-limiting and routing services to help accommodate spikes in traffic. It also providdes OAuth 2.0 and SAML authentication.  
 
 ### Cloud Firestore  
-Cloud Firestore is a mobile database service that can synchronize data between mobile devices and centralized storage. 
+Cloud Firestore is a mobile database service that can synchronize data between mobile devices and centralized storage.   
+
+### Cloud Storage Transfer  
+Cloud Storage Transfer is a service provided by Google Cloud specifically designed for transferring large amounts of data between different cloud storage providers. For instance AWS S3 -> GCP bucker migration.  
+
+### Tunnels  
+Tunnels are the network components that are configured to ensure traffic between VPN endpoints is encrypted. Tunnels create a secure, encrypted  connection between the endpoints, protecting the data being transmitted.  

@@ -54,6 +54,9 @@ Cloud Storage is designed to store large amounts of unstructured data in a varie
 ### Change storage class  
 `gcloud storage rewrite -s Coldline gs://PATH_TO_OBJECT`  
 
+### Metada in Cloud Storage object  
+`gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
+
 ### Shared VPC
 Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
 

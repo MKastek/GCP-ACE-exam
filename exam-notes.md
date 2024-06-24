@@ -28,6 +28,9 @@ A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are a
 ### Preemptible VM instances   
 Preemptible VM instances on Google Compute Engine are short-lived compute instances that can be used at a much lower cost than regular instances. They are suitable for batch jobs and workloads that can tolerate interruptions because they may be shut down by Google at any time if their resources are needed elsewhere. However, since your jobs are running nightly and only take about 2 hours to complete, preemptible VMs are ideal as they are significantly cheaper and the likelihood of interruption is acceptable for batch jobs.
 
+### Shared core machine type  
+Shared core machine types offer a balance of performance and cost efficiency, making them a good choice for low-traffic, always-on applications.  
+
 ### Cloud Storage Object Lifecycle Management
 - `Cloud Storage Object Lifecycle Management` allows you to define a set of rules that manage the lifecycle of your objects. The Age condition specifies the number of days since the object's creation.  
 - The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  

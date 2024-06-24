@@ -51,6 +51,9 @@ Coldline Storage is a storage class in Google Cloud Storage designed for data th
 ### Cloud Storage
 Cloud Storage is designed to store large amounts of unstructured data in a variety of file formats, which makes it an ideal solution for storing data that will be used in ETL transformations. Data storage pricing is based on the amount of data and storage type. Standard storage is immediately available. Nearline storage is for data accessed roughly every 30 days. Egress is the amount of data read from the bucket and is also chargeable.   
 
+### Change storage class  
+`gcloud storage rewrite -s Coldline gs://PATH_TO_OBJECT`  
+
 ### Shared VPC
 Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
 

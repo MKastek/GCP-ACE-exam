@@ -16,6 +16,16 @@ The IAM section in the Google Cloud Console provides a comprehensive view of all
 ### Node Auto-Upgrades in GKE
 This feature ensures that the nodes in your cluster are always up-to-date with the latest stable and supported version of Kubernetes. Google handles the upgrade process in a manner that aims to minimize downtime by carefully managing the upgrade of nodes. It is a key feature to maintain the reliability, security, and operational health of your applications. 
 
+### Kubernetes Logs  
+Kubernetes Engine collects application logs by default when the log data is written to:  
+- `STDOUT`  
+- `STDERR`  
+
+### Enable Cloud Operations  
+Create clusters with parameter:  
+`--logging`   
+`--monitoring`  
+  
 ### DaemonSet 
 A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected.  
 
@@ -57,6 +67,12 @@ Cloud Storage is designed to store large amounts of unstructured data in a varie
 ### Metada in Cloud Storage object  
 `gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
 
+### Cloud Storage Transfer  
+Cloud Storage Transfer is a service provided by Google Cloud specifically designed for transferring large amounts of data between different cloud storage providers. For instance AWS S3 -> GCP bucker migration.  
+
+### Access to Cloud Storage  
+Access is granted to Cloud Storage objects using IAM or access control lists (ACLs). When `uniform bucket-level access` is applied, users only have access through IAM roles and permissions. A users that could access objects before uniform bucket-level access is applied but not after must have had access through ACLs.
+
 ### Shared VPC
 Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
 
@@ -73,7 +89,7 @@ Cloud Audit Logs maintain three audit logs:
 A target pool is a group of backend instances that receive incoming traffic from external passthrough Network Load Balancers. All backend instances of a target pool must reside in the same Google Cloud region. Target pools use HTTP health checks.
 
 ### URL maps in Cloud Load Balancing
-A URL map is a set of rules for routing incoming HTTP(S) requests to specific backend services or backend buckets. A minimal URL map matches all incoming request paths `/*`.
+URL maps specify direct requests to particular services. A URL map is a set of rules for routing incoming HTTP(S) requests to specific backend services or backend buckets. A minimal URL map matches all incoming request paths `/*`.
 
 ### Routes in Cloud Load Balancing
 Routes are used to specify paths to destination IP addresses outside a subnet.
@@ -82,8 +98,7 @@ Routes are used to specify paths to destination IP addresses outside a subnet.
 Firewall rules control the flow of traffic on a network.  
 
 ### Traces in Cloud Load Balancing  
-Traces are used to understand performance characteristics of services in a distributed system.
-
+Traces are used to understand performance characteristics of services in a distributed system.  
 
 ### BigQuery
 BigQuery is a managed, petabyte scale data warehouse, which uses SQL.  
@@ -201,9 +216,6 @@ The Apigee API platform provides policy-based rate-limiting and routing services
 
 ### Cloud Firestore  
 Cloud Firestore is a mobile database service that can synchronize data between mobile devices and centralized storage.   
-
-### Cloud Storage Transfer  
-Cloud Storage Transfer is a service provided by Google Cloud specifically designed for transferring large amounts of data between different cloud storage providers. For instance AWS S3 -> GCP bucker migration.  
 
 ### Tunnels  
 Tunnels are the network components that are configured to ensure traffic between VPN endpoints is encrypted. Tunnels create a secure, encrypted  connection between the endpoints, protecting the data being transmitted.   

@@ -221,4 +221,26 @@ Cloud Firestore is a mobile database service that can synchronize data between m
 Tunnels are the network components that are configured to ensure traffic between VPN endpoints is encrypted. Tunnels create a secure, encrypted  connection between the endpoints, protecting the data being transmitted.   
 
 ### Identity in GCP  
-An identity represents an entity such as a person or service account that can be granted privileges by assigning roles to the identity. Identity types include Google accounts, Cloud Identity or Google Workspace accounts, Google groups, and service accounts.
+An identity represents an entity such as a person or service account that can be granted privileges by assigning roles to the identity. Identity types include Google accounts, Cloud Identity or Google Workspace accounts, Google groups, and service accounts.  
+
+### Cloud SQL - Point-in-time-recovery (PITR)  
+Point-in-time recovery (PITR) helps you recover an instance to a specific point in time. For example, if an error causes a loss of data, you can recover a database to its state before the error occurred.
+
+`PITR` always creates a new instance; you can't perform a PITR to an existing instance. The new instance inherits the settings of the source instance, similar to how clone creation works. However, for the new instance to inherit these settings, the instance's state must be `RUNNABLE`.  
+
+When you create a Cloud SQL instance in the Google Cloud console, PITR is enabled by default.  
+`PITR` uses binary logging to archive logs.  
+
+### Give access to VMs in Compute Engine  
+ Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key in your Cloud Platform project and allow project-wide public SSH keys on each instance.  
+
+ ### Backup for distater recovery  
+ Use GCP Cloud Storage for distater recovery, use Coldline Storage for low costs.  
+
+ ### gcloud iam roles copy  
+ gcloud iam roles copy - create a role from an existing role  
+```
+gcloud iam roles copy [--dest-organization=DEST_ORGANIZATION] [--dest-project=DEST_PROJECT]
+[--destination=DESTINATION] [--source=SOURCE] [--source-organization=SOURCE_ORGANIZATION]  
+[--source-project=SOURCE_PROJECT]  
+```

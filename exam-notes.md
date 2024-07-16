@@ -257,4 +257,13 @@ A dry run in BigQuery provides the following information:
 - estimate of charges in on-demand mode  
 - validation of your query  
 - approximate size and complexity of your query in capacity mode
-- 
+
+### How to use dry run - you want to find out how much it will cost to run the query  
+Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator.  
+
+### Make VM to use specific service account instead of the default Compute Engine service account  
+When creating the VM via the web console, specify the service account under the 'Identity and API Access' section.  
+
+
+
+

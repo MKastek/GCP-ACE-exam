@@ -48,3 +48,27 @@
     - [Parallel Composite Upload](https://cloud.google.com/storage/docs/parallel-composite-uploads)
         - Utilize if network and disk speed are not limiting factors. When doing parallel composite upload, a file is divided into up to 32 chunks and uploaded in parallel to temporary objects. The final object is recreated using the temporary objects, and the temporary objects are deleted.
     - Alternatively, for uploading large volumes of data (from hundreds of terabytes up to 1 petabyte), you can utilize **Transfer Appliance**. It is a hardware appliance you can use to securely migrate to Google Cloud Platform without disrupting business operations.
+ 
+### Pricing
+ Data storage pricing is based on the amount of data and storage type.
+ 
+### Cloud Storage Object Lifecycle Management
+- `Cloud Storage Object Lifecycle Management` allows you to define a set of rules that manage the lifecycle of your objects. The Age condition specifies the number of days since the object's creation.  
+- The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  
+- The Delete action specifies when the object should be deleted.
+
+Change storage class:  
+`gsutil rewrite -s Coldline gs://PATH_TO_OBJECT`  
+
+Creation and content type of objects:  
+`gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
+
+
+### Change storage class  
+`gcloud storage rewrite -s Coldline gs://PATH_TO_OBJECT`  
+
+### Metada in Cloud Storage object  
+`gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
+
+### Access to Cloud Storage  
+Access is granted to Cloud Storage objects using IAM or access control lists (ACLs). When `uniform bucket-level access` is applied, users only have access through IAM roles and permissions. A users that could access objects before uniform bucket-level access is applied but not after must have had access through ACLs.

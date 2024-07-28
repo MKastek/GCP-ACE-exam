@@ -14,3 +14,9 @@ A dry run in BigQuery provides the following information:
 
 ### How to use dry run - you want to find out how much it will cost to run the query  
 Use the command line to run a dry run query to estimate the number of bytes read. Then convert that bytes estimate to dollars using the Pricing Calculator. 
+
+### Predifned roles  
+- `roles/bigquery.admin`
+- `roles/bigquery.dataEditor`
+- `roles/bigquery.user`
+- `roles/bigquery.dataOwner`

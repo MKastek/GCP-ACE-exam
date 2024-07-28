@@ -1,5 +1,5 @@
 ## BigQuery  
-- BigQuery is a managed, petabyte scale data warehouse, which uses SQL.
+- BigQuery is a managed, petabyte scale data warehouse, which uses SQL, but it is not transactional database.  
 
 ### Bigquery dry run
 BigQuery provides various methods to estimate cost:  

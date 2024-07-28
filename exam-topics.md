@@ -68,32 +68,6 @@
         - Utilize if network and disk speed are not limiting factors. When doing parallel composite upload, a file is divided into up to 32 chunks and uploaded in parallel to temporary objects. The final object is recreated using the temporary objects, and the temporary objects are deleted.
     - Alternatively, for uploading large volumes of data (from hundreds of terabytes up to 1 petabyte), you can utilize **Transfer Appliance**. It is a hardware appliance you can use to securely migrate to Google Cloud Platform without disrupting business operations.
 
----
-
-### Databases
-
-- [https://cloud.google.com/blog/topics/developers-practitioners/your-google-cloud-database-options-explained](https://cloud.google.com/blog/topics/developers-practitioners/your-google-cloud-database-options-explained)
-- **Relational**
-    - Cloud SQL
-        - Managed MySQL, PostgreSQL, SQL Server.
-        - Good for general purpose SQL database.
-        - Point-in-time recovery (PITR) uses binary logs.
-    - Cloud Spanner
-        - Cloud-native with large scale, consistency, horizontal scaling.
-        - Good for RDBMS+ scale, HA, HTAP.
-    - Bare Metal
-        - Lift and shift Oracle workloads to Google Cloud.
-- **Non-Relational (NoSQL)**
-    - Firestore
-        - Cloud native, serverless, NoSQL document database, backend-as-a-service.
-        - Good for large scale, complex hierarchical data.
-    - Cloud BigTable
-        - Cloud native NoSQL wide-column store for large scale, low-latency workloads.
-        - Good for heavy read + write events.
-- **In Memory**
-    - Memory Store
-        - Fully managed Redis and Memcached for sub-millisecond data access.
-        - Good for in-memory and key-value store.
 
 ---
 

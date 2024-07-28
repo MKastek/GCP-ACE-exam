@@ -31,6 +31,12 @@ Image families are used to group related images together so you can roll forward
 ### Instances template in Compute Engine  
 Instance templates specify the configuration of virtual machines and managed instance groups.
 
+### Unmanaged instance groups in Compute Engine  
+- Multiple possible heterogeneous VMs  
+- Used to apply load balancing across heterogeneous group of instances  
+- Recommended for legacy clusters  
+- No autoscaling, autohealing, autoupdating  
+
 ### Managed instance groups in Compute Engine  
 Managed instance groups are used to create sets of identically configured VMs that can autoscale an can be configure for regional deployment, they are resilient to a failure in a single zone.  
 When configuring a managed instance group you should:  

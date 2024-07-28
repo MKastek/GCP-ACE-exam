@@ -1,5 +1,17 @@
 ## Cloud Storage  
-
+- **Used for**
+    - Unstructured data:  
+      - Images  
+      - Video  
+      - Text
+    - Archived data
+    - Temporary storage between services
+    - Global access, internet accessible
+- **Logical Organization**
+    - Global namespace  
+    - Buckets  
+    - Folders  
+    - Objects
 - [https://cloud.google.com/storage/docs/storage-classes](https://cloud.google.com/storage/docs/storage-classes)
 - **Bucket Configurations**
     - Life Cycle Management

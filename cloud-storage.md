@@ -12,7 +12,6 @@
     - Buckets  
     - Folders  
     - Objects
-- [https://cloud.google.com/storage/docs/storage-classes](https://cloud.google.com/storage/docs/storage-classes)
 - **Bucket Configurations**
     - Life Cycle Management
         - You can define conditions that trigger data deletion, or transition to a cheaper storage class with object class with object life cycle management.
@@ -38,6 +37,7 @@
         - Coldline stored at least 90 days
         - Archive stored at least 365 days
     - Read or modify on average once in those time periods
+    - [https://cloud.google.com/storage/docs/storage-classes](https://cloud.google.com/storage/docs/storage-classes)
 - **[Uploading Objects to Google Cloud Storage](https://cloud.google.com/storage/docs/uploads-downloads)**
     - Simple Upload
         - Utilize this if the file is small enough to upload again if the connection fails, and if there is **no** object metadata to send as part of the upload request.

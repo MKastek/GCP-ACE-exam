@@ -36,9 +36,6 @@ A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are a
 - Unlike some NoSQL databases that offer eventual consistency, Cloud Spanner provides strong consistency across global reads and writes, which is essential for relational data integrity.
 - It requires minimal management from the user's end, handling most of the scaling aspects automatically
 
-### Preemptible VM instances   
-Preemptible VM instances on Google Compute Engine are short-lived compute instances that can be used at a much lower cost than regular instances. They are suitable for batch jobs and workloads that can tolerate interruptions because they may be shut down by Google at any time if their resources are needed elsewhere. However, since your jobs are running nightly and only take about 2 hours to complete, preemptible VMs are ideal as they are significantly cheaper and the likelihood of interruption is acceptable for batch jobs.
-
 ### Shared core machine type  
 Shared core machine types offer a balance of performance and cost efficiency, making them a good choice for low-traffic, always-on applications.  
 

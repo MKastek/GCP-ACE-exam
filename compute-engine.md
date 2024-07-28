@@ -42,3 +42,6 @@ Compute Engine gives full control over operating system choice and configuration
 
 ### Guest attributes in Compute Engine     
 When guest attributes are enabled, Compute Engine will store your generated host keys as guest attributes. SSH host keys on your VMs improve security.  
+
+### Preemptible VM instances   
+Preemptible VM instances on Google Compute Engine are short-lived compute instances that can be used at a much lower cost than regular instances. They are suitable for batch jobs and workloads that can tolerate interruptions because they may be shut down by Google at any time if their resources are needed elsewhere. However, since your jobs are running nightly and only take about 2 hours to complete, preemptible VMs are ideal as they are significantly cheaper and the likelihood of interruption is acceptable for batch jobs.

@@ -42,37 +42,10 @@ Preemptible VM instances on Google Compute Engine are short-lived compute instan
 ### Shared core machine type  
 Shared core machine types offer a balance of performance and cost efficiency, making them a good choice for low-traffic, always-on applications.  
 
-### Cloud Storage Object Lifecycle Management
-- `Cloud Storage Object Lifecycle Management` allows you to define a set of rules that manage the lifecycle of your objects. The Age condition specifies the number of days since the object's creation.  
-- The `SetStorageClass` action changes the storage class of objects within the bucket. Setting it to 90 days means that 90 days after the object's creation, it will be moved to Coldline Storage.  
-- The Delete action specifies when the object should be deleted.
-
-Change storage class:  
-`gsutil rewrite -s Coldline gs://PATH_TO_OBJECT`  
-
-Creation and content type of objects:  
-`gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
-
-### Nealine Storage 
-Nearline Storage is a class of Cloud Storage designed for objects that will be accessed at most once every 30 days.  
-
-### Coldline Storage
-Coldline Storage is a storage class in Google Cloud Storage designed for data that you access less than once a quarter. It is priced lower than standard storage classes, making it cost-effective for long-term storage of data that is not accessed frequently.  
-
-### Cloud Storage
-Cloud Storage is designed to store large amounts of unstructured data in a variety of file formats, which makes it an ideal solution for storing data that will be used in ETL transformations. Data storage pricing is based on the amount of data and storage type. Standard storage is immediately available. Nearline storage is for data accessed roughly every 30 days. Egress is the amount of data read from the bucket and is also chargeable.   
-
-### Change storage class  
-`gcloud storage rewrite -s Coldline gs://PATH_TO_OBJECT`  
-
-### Metada in Cloud Storage object  
-`gsutil stat gs://BUCKET_NAME/OBJECT_NAME`  
 
 ### Cloud Storage Transfer  
 Cloud Storage Transfer is a service provided by Google Cloud specifically designed for transferring large amounts of data between different cloud storage providers. For instance AWS S3 -> GCP bucker migration.  
 
-### Access to Cloud Storage  
-Access is granted to Cloud Storage objects using IAM or access control lists (ACLs). When `uniform bucket-level access` is applied, users only have access through IAM roles and permissions. A users that could access objects before uniform bucket-level access is applied but not after must have had access through ACLs.
 
 ### Shared VPC
 Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.

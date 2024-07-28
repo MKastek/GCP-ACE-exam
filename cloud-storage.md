@@ -1,1 +1,30 @@
 ## Cloud Storage  
+
+- [https://cloud.google.com/storage/docs/storage-classes](https://cloud.google.com/storage/docs/storage-classes)
+- **Bucket Configurations**
+    - Life Cycle Management
+        - You can define conditions that trigger data deletion, or transition to a cheaper storage class with object class with object life cycle management.
+    - Versioning
+        - Continue to store old copies of objects you store when they are deleted or overwritten.
+    - Retention Policies
+        - Define minimum retention periods that objects must be stored.
+    - Object Holds
+        - Place an object on hold to prevent deletion
+    - Encryption Keys
+        - Customer-managed
+        - Customer-supplied
+    - Access Permissions
+        - Access Control list
+        - Uniform bucket level access
+        - Object and Bucket Level Permissions
+- **Storage Classes:**
+- **[Uploading Objects to Google Cloud Storage](https://cloud.google.com/storage/docs/uploads-downloads)**
+    - Simple Upload
+        - Utilize this if the file is small enough to upload again if the connection fails, and if there is **no** object metadata to send as part of the upload request.
+    - Multipart Upload
+        - Utilize this if the file is small enough to upload again if the connection fails, and you **need** to include object metadata as part of the upload request.
+    - Resumable Upload
+        - Utilize this for a more reliable transfer, which is especially important with large files.
+    - [Parallel Composite Upload](https://cloud.google.com/storage/docs/parallel-composite-uploads)
+        - Utilize if network and disk speed are not limiting factors. When doing parallel composite upload, a file is divided into up to 32 chunks and uploaded in parallel to temporary objects. The final object is recreated using the temporary objects, and the temporary objects are deleted.
+    - Alternatively, for uploading large volumes of data (from hundreds of terabytes up to 1 petabyte), you can utilize **Transfer Appliance**. It is a hardware appliance you can use to securely migrate to Google Cloud Platform without disrupting business operations.

@@ -1,1 +1,23 @@
 ## Databases  
+- [https://cloud.google.com/blog/topics/developers-practitioners/your-google-cloud-database-options-explained](https://cloud.google.com/blog/topics/developers-practitioners/your-google-cloud-database-options-explained)
+- **Relational**
+    - Cloud SQL
+        - Managed MySQL, PostgreSQL, SQL Server.
+        - Good for general purpose SQL database.
+        - Point-in-time recovery (PITR) uses binary logs.
+    - Cloud Spanner
+        - Cloud-native with large scale, consistency, horizontal scaling.
+        - Good for RDBMS+ scale, HA, HTAP.
+    - Bare Metal
+        - Lift and shift Oracle workloads to Google Cloud.
+- **Non-Relational (NoSQL)**
+    - Firestore
+        - Cloud native, serverless, NoSQL document database, backend-as-a-service.
+        - Good for large scale, complex hierarchical data.
+    - Cloud BigTable
+        - Cloud native NoSQL wide-column store for large scale, low-latency workloads.
+        - Good for heavy read + write events.
+- **In Memory**
+    - Memory Store
+        - Fully managed Redis and Memcached for sub-millisecond data access.
+        - Good for in-memory and key-value store.

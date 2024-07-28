@@ -1,16 +1,15 @@
 ## Table of Contents
-* [Resources Used for Preparation](#resources-used-for-preparation)
-* [Main exam topics to know ](#main-exam-topics-to-know)
-  * [Kubernetes](#kubernetes)
-  * [Compute Engine](#compute-engine)
-  * [App Engine](#app-engine)
-  * [Cloud Storage](#cloud-storage)
-  * [Databases](#databases)
-  * [Virtual Private Cloud (VPC)](#virtual-private-cloud-vpc)
-  * [Cloud Logging](#cloud-logging)
-  * [Cloud Monitoring](#cloud-monitoring)
-  * [Cloud IAM](#cloud-iam)
-  * [Cloud Billing](#cloud-billing)
+* Main exam topics to know 
+  * Kubernetes
+  * Compute Engine
+  * App Engine
+  * Cloud Storage
+  * Databases
+  * Virtual Private Cloud (VPC)
+  * Cloud Logging
+  * Cloud Monitoring
+  * Cloud IAM
+  * Cloud Billing
 
 
 ## Resources Used for Preparation

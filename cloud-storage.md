@@ -30,6 +30,14 @@
         - Uniform bucket level access
         - Object and Bucket Level Permissions
 - **Storage Classes:**
+    - Stanard Storage
+        - Frequent
+        - Optimized for performance
+    - Backup and Archival
+        - Nearline stored at least 30 days
+        - Coldline stored at least 90 days
+        - Archive stored at least 365 days
+    - Read or modify on average once in those time periods
 - **[Uploading Objects to Google Cloud Storage](https://cloud.google.com/storage/docs/uploads-downloads)**
     - Simple Upload
         - Utilize this if the file is small enough to upload again if the connection fails, and if there is **no** object metadata to send as part of the upload request.

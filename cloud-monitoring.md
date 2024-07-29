@@ -1,0 +1,12 @@
+## Cloud Monitoring  
+- **Workspaces**
+    - A Workspace can manage the monitoring of data for a single Google Cloud project, or it can manage the data for multiple Google Cloud projects and AWS accounts.
+        - A Google Cloud project or an AWS account can only be associated with one Workspace at a time.
+    - You must have the following IAM role name for the Google Cloud project to create a Workspace:
+        - Monitoring Editor
+        - Monitoring Admin
+        - Project Owner
+- **Cloud Monitoring Agent**
+    - The Cloud Monitoring agent is a `collectd` based daemon that collects application and system metrics from virtual machine instances.
+    - The Monitoring agent collects disk, network, CPU, and process metrics by default.
+    - You can configure the Monitoring agent to monitor third-party applications.

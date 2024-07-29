@@ -14,22 +14,13 @@ RDP uses port 3389, and without a proper firewall rule, you won't be able to con
 ### IAM users and roles assigned within a GCP 
 The IAM section in the Google Cloud Console provides a comprehensive view of all IAM members (users, service accounts, groups, etc.) and their assigned roles within the selected project. It allows you to verify who has access to what resources within your project and with which permissions.
 
-### Node Auto-Upgrades in GKE
-This feature ensures that the nodes in your cluster are always up-to-date with the latest stable and supported version of Kubernetes. Google handles the upgrade process in a manner that aims to minimize downtime by carefully managing the upgrade of nodes. It is a key feature to maintain the reliability, security, and operational health of your applications. 
 
-### Kubernetes Logs  
-Kubernetes Engine collects application logs by default when the log data is written to:  
-- `STDOUT`  
-- `STDERR`  
 
 ### Enable Cloud Operations  
 Create clusters with parameter:  
 `--logging`   
 `--monitoring`  
   
-### DaemonSet 
-A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected.  
-
 ### Cloud Spanner 
 - Cloud Spanner is a fully managed, scalable, relational database service with global distribution and horizontal scaling capabilities.
 - It's designed to handle large volumes of transactions and to scale horizontally across regions without significant downtime.
@@ -73,9 +64,6 @@ Traces are used to understand performance characteristics of services in a distr
 
 ### gcloud command to describe project
 `gcloud projects describe <PROJECT_ID>`
-
-### GKE default logs  
-Kubernetes Engine collects log data written to standard output `STDOUT` and standard error `STDERR`.
 
 ### Clone persistent disk
 The source and cloned disk must be in the _same zone_ and _region_ and must be of the _same type_. The size of the clone must be at least the size of the source disk but does not need to be the same. 

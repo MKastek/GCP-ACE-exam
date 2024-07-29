@@ -14,3 +14,12 @@
 
 ### Shared VPC
 Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
+
+
+### Command to create VPC  
+
+```bash
+gcloud compute networks create
+```
+
+Flow Log option of the `create vpc` command determines wheter logs are sent to Cloud Logging.

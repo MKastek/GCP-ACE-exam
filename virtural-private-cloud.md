@@ -11,3 +11,6 @@
         - *Partner Interconnect* provides connectivity between your on-premises and VPC networks through a supported service provider.
     - Consider using Cloud VPN if you [don’t require low-latency and high availability](https://cloud.google.com/network-connectivity/docs/interconnect/concepts/overview#cloud-vpn-considerations) to set up IPSec VPN tunnels between your networks. IPSec VPN tunnels encrypts data.
         - A Cloud VPN tunnel doesn't require the overhead or costs associated with a direct, private connection. Cloud VPN only requires a VPN device in your on-premises network.
+
+### Shared VPC
+Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.

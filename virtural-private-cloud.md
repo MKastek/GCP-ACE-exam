@@ -13,7 +13,8 @@
         - A Cloud VPN tunnel doesn't require the overhead or costs associated with a direct, private connection. Cloud VPN only requires a VPN device in your on-premises network.
 
 ### Shared VPC
-Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
+Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.   
+Shared VPCs can be created at the organization or folder level of the resource hierarchy.  
 
 
 ### Command to create VPC  

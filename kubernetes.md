@@ -49,4 +49,17 @@
     - You cannot enable GKE Sandbox on a default node pool.
     - When using Sandbox, you must have at least 2 node pools.
     - It’s not possible to use accelerations such as GPUs or TPUs.
+ 
+
+### DaemonSet 
+A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected.  
+
+
+### Kubernetes Logs  
+Kubernetes Engine collects application logs by default when the log data is written to:  
+- `STDOUT`  
+- `STDERR`
+
+### Node Auto-Upgrades in GKE
+This feature ensures that the nodes in your cluster are always up-to-date with the latest stable and supported version of Kubernetes. Google handles the upgrade process in a manner that aims to minimize downtime by carefully managing the upgrade of nodes. It is a key feature to maintain the reliability, security, and operational health of your applications.
 

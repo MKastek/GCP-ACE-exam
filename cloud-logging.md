@@ -1,0 +1,26 @@
+## Cloud Logging  
+- **Features**
+    - Write any custom log, from any source, into Cloud Logging using the public write APIs.
+    - Integrates with Cloud Monitoring to set alerts on the logs events and logs-based metrics you have defined.
+    - You can export data in real-time to BigQuery to perform advanced analytics and SQL-like query tasks.
+    - Cloud Logging helps you see the problems with your data using Error Reporting. It helps you automatically analyze your logs for exceptions and intelligently aggregate them into meaningful error groups.
+- **Cloud Audit Logs**
+    - Admin Activity admin logs
+        - Contains log entries for API calls or other administrative actions that modify the configuration or metadata or resources.
+        - You must have the IAM role logging/logs.viewer or project/viewer to view these logs.
+        - Admin Activity logs are always written and you can’t configure or disable them in any way.
+    - Data Access audit logs
+        - Contains API calls that read the configuration or metadata of resources, including user-driven API calls that create, modify, or read user-provided resource data.
+        - You must have logging/private.logs.viewer or project/owner to view these logs.
+        - You must explicitly enable Data Access audit logs to be written. They are disabled by default because they are large.
+    - System Event audit logs
+        - Contains log entries for administrative actions taken by Google Cloud that modify the configuration of resources.
+        - You must have the IAM role logging/logs.viewer or project/viewer to view these logs.
+        - System Event audit logs are always written so you can’t configure or disable them.
+        - There is no additional charge for your System Event audit logs.
+    - Exporting Audit Logs
+        - Log entries received by Logging can be exported to Cloud Storage buckets, BigQuery datasets. and Pub/Sub topics.
+        - To export audit log entries outside of logging:
+            - Create a logs sink.
+            - Give the sink a query that specifies the audit log types you want to export.
+        - If you want to export audit log entries for a Google Cloud organization, folder, or billing account, review Aggregated sinks.

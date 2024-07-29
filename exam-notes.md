@@ -29,14 +29,7 @@ Create clusters with parameter:
 
 ### Shared core machine type  
 Shared core machine types offer a balance of performance and cost efficiency, making them a good choice for low-traffic, always-on applications.  
-
-
-### Cloud Storage Transfer  
-Cloud Storage Transfer is a service provided by Google Cloud specifically designed for transferring large amounts of data between different cloud storage providers. For instance AWS S3 -> GCP bucker migration.  
-
-
-### Shared VPC
-Shared VPC allows projects to share a common VPC network. VPNs are used to link VPCs to on premises networks.
+ 
 
 ### Cloud Audit Logs
 Google Cloud services write audit logs that record administrative activities and accesses within your Google Cloud resources. Audit logs help you answer "who did what, where, and when?"
@@ -115,9 +108,6 @@ K_Configuration specifies the configuration that created the container.
  ### Cloud Foundation Toolkit
  #### Best-practice templates  
  The Cloud Foundation Toolkit provides a series of reference templates for Deployment Manager and Terraform which reflect Google Cloud best practices. These templates can be used off-the-shelf to quickly build a repeatable enterprise-ready foundation in Google Cloud. This frees you to focus on deploying your applications on this baseline secure environment. And with infrastructure as code (IaC), you can easily update the foundation as your needs change.  
-
- ### Transfer Appliance  
- Transfer Appliance is a high-capacity storage device that enables you to transfer and securely ship your data to a Google upload facility, where we upload your data to Cloud Storage.  
 
 ### Allocation quotas  
 Allocation quotas, also known as resource quotas, define the number of resources that your project has access to. Compute Engine enforces allocation quotas on resource usage for various reasons. For example, quotas help to protect the community of Google Cloud users by preventing unforeseen spikes in usage.  

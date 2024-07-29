@@ -72,3 +72,9 @@ Creation and content type of objects:
 
 ### Access to Cloud Storage  
 Access is granted to Cloud Storage objects using IAM or access control lists (ACLs). When `uniform bucket-level access` is applied, users only have access through IAM roles and permissions. A users that could access objects before uniform bucket-level access is applied but not after must have had access through ACLs.
+
+### Cloud Storage Transfer  
+Cloud Storage Transfer is a service provided by Google Cloud specifically designed for transferring large amounts of data between different cloud storage providers. For instance AWS S3 -> GCP bucker migration.  
+
+ ### Transfer Appliance  
+ Transfer Appliance is a high-capacity storage device that enables you to transfer and securely ship your data to a Google upload facility, where we upload your data to Cloud Storage.  

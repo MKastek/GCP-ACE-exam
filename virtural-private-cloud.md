@@ -38,4 +38,16 @@ Example of `gcloud` command:
 ```bash
 gcloud compute firewall-rules create ace-exam-fwr2 --network ace-exam-vpc1 --allow tcp:20000-25000
 ```
+Parameters:  
 
+### Structure of Firewall Rules  
+- Direction
+- Priority
+- Action
+- Target
+- Source/destination
+- Protocol and port
+- Enforcement status
+
+
+### Default firewalls  

@@ -61,3 +61,8 @@ The default rules all have priority 65534.
 
 
 ### Implied rules  
+All VPCs start with two implied rules:  
+- Allow egress traffic from any source (IP address 0.0.0.0/0).  
+- Deny all incoming traffic from any source (IP address 0.0.0.0/0).
+
+Implied rules have priority 65535. You cannot delete and implied rule.  

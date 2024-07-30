@@ -36,6 +36,6 @@ When you create VPN, you need to create forwarding rules, tunnels and gateways w
 ### Creating firewall  
 Example of `gcloud` command:  
 ```bash
-gcloud compute firewall-rules crreate ace-exam-fwr2 --network ace-exam-vpc1 --allow tcp:20000-25000
+gcloud compute firewall-rules create ace-exam-fwr2 --network ace-exam-vpc1 --allow tcp:20000-25000
 ```
 

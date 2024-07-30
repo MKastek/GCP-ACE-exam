@@ -24,3 +24,12 @@ gcloud compute networks create
 ```
 
 Flow Log option of the `create vpc` command determines wheter logs are sent to Cloud Logging.
+
+
+### Creating VPN  
+When you create VPN, you need to create forwarding rules, tunnels and gateways with use of:
+- `gcloud compute forwarding-rule`    
+- `gcloud compute target-vpn-gateways`  
+- `gcloud compute vpn-tunnels`  
+
+

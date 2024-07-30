@@ -51,6 +51,12 @@ Parameters:
 
 
 ### Default firewalls  
+Default network is created with four network rules:  
+- Incoming traffic from any VM instance on the same network
+- Incoming TCP traffic on port 22 - allowing SSH
+- Incoming TCP traffic on port 3389 - allowing Microsoft Remote Desktop Protocol (RDP)
+- Incoming Internet Control Message Protocol (ICMP) from any source on the network
+The default rules all have priority 65534.  
 
 
 

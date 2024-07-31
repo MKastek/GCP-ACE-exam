@@ -107,7 +107,7 @@ Zones are containers for DNS records, Zone parameters:
 - DNS name (suffix of address)
 - DNSSEC (DNS security - strong authentication)
 
-When a zone is created, `NS` and `SOA` records are added.
+When a zone is created, `NS` and `SOA` records are added.  
 `NS` is a name server record that has the address of an authorative server that manages the zone information.  
 `SOA` is a start of authority record, which has authorative information about the zone.  
 

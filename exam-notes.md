@@ -40,38 +40,10 @@ Cloud Audit Logs maintain three audit logs:
 
 `Data Access Audit logs` generate large amounts of data and are disabled by default for most services; it is enabled by default for BigQuery. The other audit logs are not likely to generate the same volume of data as the Data Access Audit logs.    
 
-### Target pools in Cloud Load Balancing
-A target pool is a group of backend instances that receive incoming traffic from external passthrough Network Load Balancers. All backend instances of a target pool must reside in the same Google Cloud region. Target pools use HTTP health checks.
-
-### URL maps in Cloud Load Balancing
-URL maps specify direct requests to particular services. A URL map is a set of rules for routing incoming HTTP(S) requests to specific backend services or backend buckets. A minimal URL map matches all incoming request paths `/*`.
-
-### Routes in Cloud Load Balancing
-Routes are used to specify paths to destination IP addresses outside a subnet.
-
-### Firewall rules in Cloud Load Balancing
-Firewall rules control the flow of traffic on a network.  
-
-### Traces in Cloud Load Balancing  
-Traces are used to understand performance characteristics of services in a distributed system.  
-
-### gcloud command to describe project
-`gcloud projects describe <PROJECT_ID>`
 
 ### Clone persistent disk
 The source and cloned disk must be in the _same zone_ and _region_ and must be of the _same type_. The size of the clone must be at least the size of the source disk but does not need to be the same. 
 
-### App Engine  
-App Engine is designed for applications written in supported languages, that need to run at low cost, and need to scale in response to rapid increases in load. App Engine is a managed service and as such minimizes operational overhead.
-
-#### cron.yaml 
-Cron.yaml files contain specifications for running scheduled jobs in App Engine.
-
-#### app.yaml
-App.yaml has overall application specifications.  
-
-#### App Engine Standard  
-App Engine Standard i a platform as a service (PaaS), you do not have to manage underlying infrastructure. It provides a secure sandbox environment for deploying new features quickly.  
 
 
 ### Datastore

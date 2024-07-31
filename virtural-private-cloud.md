@@ -99,3 +99,20 @@ Firewall rules control the flow of traffic on a network.
 
 ### Traces in Cloud Load Balancing  
 Traces are used to understand performance characteristics of services in a distributed system.  
+
+### Cloud DNS  
+Zones are containers for DNS records, Zone parameters:  
+- Zone type (Public or Private)
+- Zone name 
+- DNS name (suffix of address)
+- DNSSEC (DNS security - strong authentication)
+
+When a zone is created, `NS` and `SOA` records are added.
+`NS` is a name server record that has the address of an authorative server that manages the zone information.  
+`SOA` is a start of authority record, which has authorative information about the zone.  
+
+You can add:  
+`A` record which specifies th address of a DNS resolver which maps domain names to IP address.      
+`CNAME` record store the cannonical name of the domain.  
+
+

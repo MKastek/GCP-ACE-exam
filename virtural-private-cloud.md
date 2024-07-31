@@ -66,3 +66,22 @@ All VPCs start with two implied rules:
 - Deny all incoming traffic from any source (IP address 0.0.0.0/0).
 
 Implied rules have priority 65535. You cannot delete and implied rule.  
+
+### Load Balancers characteristics  
+- Global vs Regional  
+- External vs Internal  
+- Traffic type (HTTP, TCP)  
+
+Global load balancers are used when an application is globally distributed.  
+
+Regional load balancers are used when an application is in a single region.  
+
+**Global Load Balanacers**:  
+- HTTP(S) (balances HTTP and HTTPS load across backend instances)
+- SSL Proxy  (terminates SSL/TLS connections - non-HTTPS traffic)
+- TCP Proxy (terminates TCP session at the load balancer and then forwards traffic to backend servers)
+
+**Regional Load Balancers**:  
+- Internal TCP/UDP (balances TCP/UDP traffic on private networks hosting internal VMs)
+- Network TPC/UDP (balancing based on IP protocol, address and port)
+

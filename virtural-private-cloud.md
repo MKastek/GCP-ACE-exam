@@ -85,3 +85,17 @@ Regional load balancers are used when an application is in a single region.
 - Internal TCP/UDP (balances TCP/UDP traffic on private networks hosting internal VMs)
 - Network TPC/UDP (balancing based on IP protocol, address and port)
 
+### Target pools in Cloud Load Balancing
+A target pool is a group of backend instances that receive incoming traffic from external passthrough Network Load Balancers. All backend instances of a target pool must reside in the same Google Cloud region. Target pools use HTTP health checks.
+
+### URL maps in Cloud Load Balancing
+URL maps specify direct requests to particular services. A URL map is a set of rules for routing incoming HTTP(S) requests to specific backend services or backend buckets. A minimal URL map matches all incoming request paths `/*`.
+
+### Routes in Cloud Load Balancing
+Routes are used to specify paths to destination IP addresses outside a subnet.
+
+### Firewall rules in Cloud Load Balancing
+Firewall rules control the flow of traffic on a network.  
+
+### Traces in Cloud Load Balancing  
+Traces are used to understand performance characteristics of services in a distributed system.  

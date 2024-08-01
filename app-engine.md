@@ -46,3 +46,11 @@ App.yaml has overall application specifications.
 
 #### App Engine Standard  
 App Engine Standard i a platform as a service (PaaS), you do not have to manage underlying infrastructure. It provides a secure sandbox environment for deploying new features quickly. 
+
+
+### App Engine Traffic Splitting  
+- If more than one version of an app running, you can split traffic between versions.
+- 3 ways to split trafiic:
+      - IP address
+      - HTTP cookie
+      - Random selection

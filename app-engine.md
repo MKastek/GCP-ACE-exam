@@ -53,4 +53,11 @@ App Engine Standard i a platform as a service (PaaS), you do not have to manage 
 - 3 ways to split trafiic:  
       - IP address  
       - HTTP cookie  
-      - Random selection  
+      - Random selection
+
+### Traffic Splitting by Cookie  
+- Preferred method of traffic splitting
+- HTTP request header for cookie named `GOOGAPPUID` with hash value
+- Hash value determines instance to route traffic too
+
+

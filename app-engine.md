@@ -1,5 +1,7 @@
 ## App Engine  
-
+- Platform as Service
+- Serverless managed service
+- Originally limited to languge specific runtimes, now can run custom containters  
 - **Standard and Flexible environment**
     - Standard
         - Based on container instances running on Google’s infrastructure.

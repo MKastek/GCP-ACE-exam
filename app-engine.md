@@ -5,8 +5,14 @@
 - **Standard and Flexible environment**
     - Standard
         - Based on container instances running on Google’s infrastructure.
+        - Run applications in preconfigured containers.
+        - Autoscales
+        - Python, Java, Go, Ruby, PHP, Node.js
     - Flexible
         - Enables you to manage the underlying compute infrastructure.
+        - Customized Docker container (other language support).
+        - Higher CPU and memory limites
+        - Applications run in regional managed instance groups - not zonal.
 - **Scaling**
     - Basic
         - Creates instances when your application receives requests.

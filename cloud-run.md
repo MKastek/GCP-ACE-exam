@@ -3,7 +3,7 @@
 - Avaialable in two forms:
     - Managed service
     - Anthos
-  ### Managed service  
+### Managed service  
 - When you use managed service you pay per use with limitations:
     - 1000 services per region
     - 2 GB memory per container instance

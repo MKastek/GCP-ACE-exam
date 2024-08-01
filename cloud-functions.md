@@ -12,10 +12,10 @@
 - Cloud Pub/Sub
     - Publish a message
 
-  - HTTP
-      - POST
-      - GET
-      - PUT
-      - DELETE
-      - OPTIONS
-  
+- HTTP
+  - POST
+  - GET
+  - PUT
+  - DELETE
+  - OPTIONS
+

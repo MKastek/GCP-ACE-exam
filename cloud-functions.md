@@ -22,3 +22,5 @@
 
 ### Functions  
 Supported langunages: Node.js, Python, Go, Java, Ruby, PHP  
+Memory allocation  
+

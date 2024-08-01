@@ -40,3 +40,8 @@
         - Link/unlink the project to/from a billing account.
         - Can be assigned at the organization level or billing account.
         - This role allows a user to attach the project to the billing account, but does not grant any rights over resources. Project Owners can use this role to allow someone else to manage the billing for the project without granting them resource access.
+
+
+### Billing accounts in Google Cloud
+-  Project and its resources can only be tied to one billing account.
+-  Billing account can handle billing for more than one project.

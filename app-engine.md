@@ -24,6 +24,17 @@
 - Deploying an App Engine service with CLI.
 
 
+
+### Configuring Autoscaling  
+- Configured in app.yaml
+- Configuration options include:
+    - Target_cpu_utilization
+    - Target_throughput_utilization
+    - Max_concurrent_requests
+    - Max_pending_latency
+    - Min pending_latency
+
+
 ### App Engine  
 App Engine is designed for applications written in supported languages, that need to run at low cost, and need to scale in response to rapid increases in load. App Engine is a managed service and as such minimizes operational overhead.
 

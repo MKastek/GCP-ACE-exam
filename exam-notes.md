@@ -54,11 +54,6 @@ Cloud Dataproc is a managed Spark/Hadoop service that can be used to migrate Had
  #### Best-practice templates  
  The Cloud Foundation Toolkit provides a series of reference templates for Deployment Manager and Terraform which reflect Google Cloud best practices. These templates can be used off-the-shelf to quickly build a repeatable enterprise-ready foundation in Google Cloud. This frees you to focus on deploying your applications on this baseline secure environment. And with infrastructure as code (IaC), you can easily update the foundation as your needs change.  
 
-### Allocation quotas  
-Allocation quotas, also known as resource quotas, define the number of resources that your project has access to. Compute Engine enforces allocation quotas on resource usage for various reasons. For example, quotas help to protect the community of Google Cloud users by preventing unforeseen spikes in usage.  
-
-Allocation quotas are the maximum number of resources you can create of that resource type, if those resources are available. 
-
 
 ### Project name
 Project name is set by the user at creation. It does not have to be unique. It can be changed after creation time.  

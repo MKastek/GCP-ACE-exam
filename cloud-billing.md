@@ -45,3 +45,6 @@
 ### Billing accounts in Google Cloud
 -  Project and its resources can only be tied to one billing account.
 -  Billing account can handle billing for more than one project.
+
+### Quotas for the resources  
+setting up quotas for the resources will prevent resource consumption from exceeding specified limits.  

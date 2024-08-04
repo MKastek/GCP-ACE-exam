@@ -75,3 +75,5 @@ with optional parameters:
 You can stop serving versions using the `gcloud app versions stop` command:  
 `gcloud app versions stop v1`  
 
+### App Engine limitations  
+A Cloud project is limited to one App Engine application, and it's not possible to relocate the App Engine application after it has been created.

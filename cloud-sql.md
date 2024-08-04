@@ -1,4 +1,4 @@
-## Cloud-sql
+## Cloud SQL
 
 ### Cloud SQL - Point-in-time-recovery (PITR)  
 Point-in-time recovery (PITR) helps you recover an instance to a specific point in time. For example, if an error causes a loss of data, you can recover a database to its state before the error occurred.

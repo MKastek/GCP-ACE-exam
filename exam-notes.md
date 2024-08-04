@@ -46,11 +46,6 @@ The source and cloned disk must be in the _same zone_ and _region_ and must be o
 
 
 
-### Datastore
-#### index.yaml
-Index.yaml files contain indexes for complex queries that reference more than one attribute. Datastore automatically creates indexes for single attributes. All queries must have a supporting index.  
-
-
 ### Cloud Dataproc  
 Cloud Dataproc is a managed Spark/Hadoop service that can be used to migrate Hadoop clusters GCP.  
 
@@ -79,9 +74,7 @@ When configuring access for GKE, you set up dedicated service accounts for each 
 
 ### Apigee API platform  
 The Apigee API platform provides policy-based rate-limiting and routing services to help accommodate spikes in traffic. It also providdes OAuth 2.0 and SAML authentication.  
-
-### Cloud Firestore  
-Cloud Firestore is a mobile database service that can synchronize data between mobile devices and centralized storage.   
+   
 
 ### Tunnels  
 Tunnels are the network components that are configured to ensure traffic between VPN endpoints is encrypted. Tunnels create a secure, encrypted  connection between the endpoints, protecting the data being transmitted.   
@@ -89,13 +82,6 @@ Tunnels are the network components that are configured to ensure traffic between
 ### Identity in GCP  
 An identity represents an entity such as a person or service account that can be granted privileges by assigning roles to the identity. Identity types include Google accounts, Cloud Identity or Google Workspace accounts, Google groups, and service accounts.  
 
-### Cloud SQL - Point-in-time-recovery (PITR)  
-Point-in-time recovery (PITR) helps you recover an instance to a specific point in time. For example, if an error causes a loss of data, you can recover a database to its state before the error occurred.
-
-`PITR` always creates a new instance; you can't perform a PITR to an existing instance. The new instance inherits the settings of the source instance, similar to how clone creation works. However, for the new instance to inherit these settings, the instance's state must be `RUNNABLE`.  
-
-When you create a Cloud SQL instance in the Google Cloud console, PITR is enabled by default.  
-`PITR` uses binary logging to archive logs.  
 
 ### Give access to VMs in Compute Engine  
  Generate a new SSH key pair. Give the private key to each member of your team. Configure the public key as a project-wide public SSH key in your Cloud Platform project and allow project-wide public SSH keys on each instance.  

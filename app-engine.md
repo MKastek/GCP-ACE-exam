@@ -34,9 +34,11 @@
     - Max_pending_latency
     - Min pending_latency
 
- Instances are created to execute an application on an App Engine managed server. App Engine can automatically add or remove instances as needed based on load. When instances are scaled based on load, they are called `dynamic` instances. These dynamic instances help optimize your costs by shutting down when demand is low.  
-
-
+ Instances are created to execute an application on an App Engine managed server. App Engine can automatically add or remove instances as needed based on load. When instances are scaled based on load, they are called `dynamic` instances. These dynamic instances help optimize your costs by shutting down when demand is low. 
+   
+ Your configuration determines wheter an instance is resident or dynamic. If you configure `autoscaling` or `basic scaling`, then instances will be dynamic.   
+ If you configure `manual scaling` then your instances will be resident.  
+ 
 ### App Engine  
 App Engine is designed for applications written in supported languages, that need to run at low cost, and need to scale in response to rapid increases in load. App Engine is a managed service and as such minimizes operational overhead.
 

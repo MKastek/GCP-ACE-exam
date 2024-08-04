@@ -29,3 +29,20 @@
     - It’s easier and better to manage members in a Google group than to update an IAM policy.
     - Rotate your service account keys using the IAM service account API.
     - For production workloads, it’s best practice to user user-managed service accounts instead of the default service accounts.
+
+
+### IAM users and roles assigned within a GCP 
+The IAM section in the Google Cloud Console provides a comprehensive view of all IAM members (users, service accounts, groups, etc.) and their assigned roles within the selected project. It allows you to verify who has access to what resources within your project and with which permissions.  
+
+
+### Principle of least privilege
+Give just enough permissions to perform the required tasks  
+
+
+ ### gcloud iam roles copy  
+ gcloud iam roles copy - create a role from an existing role  
+```
+gcloud iam roles copy [--dest-organization=DEST_ORGANIZATION] [--dest-project=DEST_PROJECT]
+[--destination=DESTINATION] [--source=SOURCE] [--source-organization=SOURCE_ORGANIZATION]  
+[--source-project=SOURCE_PROJECT]  
+```

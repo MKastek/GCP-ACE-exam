@@ -34,6 +34,8 @@
     - Max_pending_latency
     - Min pending_latency
 
+ Instances are created to execute an application on an App Engine managed server. App Engine can automatically add or remove instances as needed based on load. When instances are scaled based on load, they are called `dynamic` instances. These dynamic instances help optimize your costs by shutting down when demand is low.  
+
 
 ### App Engine  
 App Engine is designed for applications written in supported languages, that need to run at low cost, and need to scale in response to rapid increases in load. App Engine is a managed service and as such minimizes operational overhead.
@@ -60,4 +62,14 @@ App Engine Standard i a platform as a service (PaaS), you do not have to manage 
 - HTTP request header for cookie named `GOOGAPPUID` with hash value
 - Hash value determines instance to route traffic too
 
+### gcloud command  
+To deploy your app, you can use the following command:  
+`gcloud app deploy app.yml`  
+with optional parameters:  
+- `--version` to specify a custom version ID  
+- `--project` to specify the project ID to use for this app  
+- `--no-promote` to deploy the app without routing traffic to it  
+
+You can stop serving versions using the `gcloud app versions stop` command:  
+`gcloud app versions stop v1`  
 

@@ -52,14 +52,15 @@ When guest attributes are enabled, Compute Engine will store your generated host
 ### Preemptible VM instances   
 Preemptible VM instances on Google Compute Engine are short-lived compute instances that can be used at a much lower cost than regular instances. They are suitable for batch jobs and workloads that can tolerate interruptions because they may be shut down by Google at any time if their resources are needed elsewhere. However, since your jobs are running nightly and only take about 2 hours to complete, preemptible VMs are ideal as they are significantly cheaper and the likelihood of interruption is acceptable for batch jobs.
 
-
 ### Basic Rolling Update  
 You can control various aspects of a rolling update, such as how many instances can be taken offline for the update, how long to wait between updating instances, whether the new template affects all or just a portion of instances, and so on.  
 
-
 For advanced configurations, include other update options. If you don't specify otherwise, the `maxSurge` and `maxUnavailable` options default to 1 multiplied by the number of affected zones. This means that only 1 instance is taken offline in each affected zone, and the MIG creates only 1 additional instance per zone, during the update.  
-
 
 Use the `maxSurge` option to configure how many new instances the MIG can create above its `targetSize` during an automated update. For example, if you set `maxSurge` to 5, the MIG uses the new instance template to create up to 5 new instances above your target size. Setting a higher maxSurge value speeds up your update, at the cost of additional instances.   
 
 Use the `maxUnavailable` option to configure how many instances are unavailable at any time during an automated update. For example, if you set `maxUnavailable` to 5, then only 5 instances are taken offline for updating at a time. Use this option to control how disruptive the update is to your service and to control the rate at which the update is deployed.  
+
+
+### Shared core machine type  
+Shared core machine types offer a balance of performance and cost efficiency, making them a good choice for low-traffic, always-on applications.  

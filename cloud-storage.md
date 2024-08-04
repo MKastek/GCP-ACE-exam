@@ -78,3 +78,6 @@ Cloud Storage Transfer is a service provided by Google Cloud specifically design
 
  ### Transfer Appliance  
  Transfer Appliance is a high-capacity storage device that enables you to transfer and securely ship your data to a Google upload facility, where we upload your data to Cloud Storage.  
+
+ ### Signed URL  
+ A signed URL is a URL that provides limited permission and time to make a request. Signed URLs contain authentication information in their query string, allowing users without credentials to perform specific actions on a resource.  

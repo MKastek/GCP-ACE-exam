@@ -5,14 +5,10 @@ This is a Google Cloud service that automates the creation and management of Goo
 
 Deployment Manager is a configuration management tool that allows you to define and deploy a set of resources, including Compute Engine VMs, in a declarative manner. You can use it to specify the exact specifications of your VMs in a configuration file, and Deployment Manager will create and manage those VMs for you. Deployment Manager is recommended by Google as a way to automate and manage the deployment of resources on the Google Cloud Platform.
 
-### Principle of least privilege
-Give just enough permissions to perform the required tasks
 
 ### Remote Desktop Protocol
 RDP uses port 3389, and without a proper firewall rule, you won't be able to connect to the instance.
 
-### IAM users and roles assigned within a GCP 
-The IAM section in the Google Cloud Console provides a comprehensive view of all IAM members (users, service accounts, groups, etc.) and their assigned roles within the selected project. It allows you to verify who has access to what resources within your project and with which permissions.
 
 
 
@@ -27,8 +23,6 @@ Create clusters with parameter:
 - Unlike some NoSQL databases that offer eventual consistency, Cloud Spanner provides strong consistency across global reads and writes, which is essential for relational data integrity.
 - It requires minimal management from the user's end, handling most of the scaling aspects automatically
 
-### Shared core machine type  
-Shared core machine types offer a balance of performance and cost efficiency, making them a good choice for low-traffic, always-on applications.  
  
 
 ### Cloud Audit Logs
@@ -84,13 +78,6 @@ An identity represents an entity such as a person or service account that can be
  ### Backup for distater recovery  
  Use GCP Cloud Storage for distater recovery, use Coldline Storage for low costs.  
 
- ### gcloud iam roles copy  
- gcloud iam roles copy - create a role from an existing role  
-```
-gcloud iam roles copy [--dest-organization=DEST_ORGANIZATION] [--dest-project=DEST_PROJECT]
-[--destination=DESTINATION] [--source=SOURCE] [--source-organization=SOURCE_ORGANIZATION]  
-[--source-project=SOURCE_PROJECT]  
-```
  
 
 ### Make VM to use specific service account instead of the default Compute Engine service account  

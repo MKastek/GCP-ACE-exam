@@ -19,8 +19,21 @@
   - DELETE
   - OPTIONS
 
+- Firebase  
+
+- Logging  
 
 ### Functions  
 Supported langunages: Node.js, Python, Go, Java, Ruby, PHP  
 Memory allocation  
+
+### Time limits  
+By default, the functions will time out after 1 minute, although you can set the timemout for as long as 9 minutes.   
+
+### Memory Allocated  
+Memory allocated is the amount that will be available to the function. Memory options range from **128MB to 2GB**.  
+
+### gcloud commands for Cloud Functions  
+`gcloud functions deploy`  
+`gcloud functions delete`  
 

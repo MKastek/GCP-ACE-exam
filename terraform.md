@@ -40,3 +40,21 @@ resource "google_compute_network" "default" {
 - **depends_on**	Specifies dependencies between resources, ensuring that one resource is created or updated before another.
 - **lifecycle**	Defines the lifecycle behavior of a resource, such as actions to take before or after creation or deletion.
 - **provider**	Selects a non-default provider configuration for a resource.
+
+### Terraform state  
+In Terraform, state is a critical concept that keeps track of the infrastructure managed by Terraform. The state file records the current status of resources created, updated, or deleted, ensuring that Terraform has an accurate view of what exists in your infrastructure.  
+
+The state file (`terraform.tfstate`) is used by Terraform to map real-world resources to the configuration defined in the `.tf` files.  
+
+#### View the current state  
+```bash
+terraform show
+```
+
+#### List resources in the state file
+```bash
+terraform state list
+```   
+
+#### State Locking
+When using a remote backend, Terraform locks the state during operations, preventing multiple people from making changes simultaneously, which could lead to inconsistencies.

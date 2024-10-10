@@ -58,3 +58,14 @@ terraform state list
 
 #### State Locking
 When using a remote backend, Terraform locks the state during operations, preventing multiple people from making changes simultaneously, which could lead to inconsistencies.
+
+
+## Key Features of Terraform  
+- **Declarative Language**: Terraform uses the HashiCorp Configuration Language (HCL)
+- **Provider System**: Terraform uses "providers" to communicate with APIs of different cloud platforms. Examples include:
+   - `google` provider for Google Cloud Platform (GCP)
+   - `aws` provider for AWS
+- **Infrastructure as Code**: With Terraform, infrastructure is defined as code, enabling version control, collaboration, and automation of infrastructure deployment.
+- **State Management**: Terraform maintains a state file (terraform.tfstate), which tracks the current state of your infrastructure. This helps Terraform to understand what resources are present and if they need to be modified, added, or deleted.
+- **Execution Plan**: Terraform generates an execution plan with the terraform plan command, showing what actions will be performed before making changes. This allows you to review and confirm changes before applying them.
+- **Modular Design**: Terraform encourages the use of modules, which are reusable packages of code for common infrastructure patterns.
